@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 	int count = 0;
 
 	while (!in.eof()) {
-		//in >> str;
-		getline(in, str);
+		//in >> str;		// ホワイトスペース単位で読む
+		getline(in, str);	// 改行単位で読む
 		pos = 0;
 		do {
 			pos = ss.exec(str.c_str(), pos); 
